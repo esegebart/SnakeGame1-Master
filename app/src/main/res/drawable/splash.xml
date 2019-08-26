@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!---Design the splash screen layout as drawable using a picture-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:opacity="opaque">
+    <item android:drawable="@color/muted_green"/>
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/snake"/>
+    </item>
+</layer-list>

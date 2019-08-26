@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\elyse\\OneDrive\\Documents\\IT4784_Adv_Mobile_App_Dev\\Unit_2\\SnakeGame1-master\\SnakeGame1-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-nonav\\values-nonav.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\elyse\\OneDrive\\Documents\\IT4784_Adv_Mobile_App_Dev\\Unit_2\\SnakeGame1-master\\SnakeGame1-master\\app\\src\\main\\res\\values-nonav\\strings.xml",
+                    "from": {
+                        "startLines": "17,20,19,18",
+                        "startColumns": "2,2,2,2",
+                        "startOffsets": "685,859,791,726",
+                        "endColumns": "40,81,67,64",
+                        "endOffsets": "723,938,856,788"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,98,182,252",
+                        "endColumns": "42,83,69,66",
+                        "endOffsets": "93,177,247,314"
+                    }
+                }
+            ]
+        }
+    ]
+}
