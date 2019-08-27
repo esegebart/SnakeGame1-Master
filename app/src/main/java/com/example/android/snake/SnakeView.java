@@ -86,6 +86,11 @@ public class SnakeView extends TileView {
     private static final int YELLOW_STAR = 2;
     private static final int GREEN_STAR = 3;
     private static final int APPLE = 4;
+    private static final int ROCK = 5;
+    private static final int SNAKE_LEFT = 6;
+    private static final int SNAKE_RIGHT = 7;
+    private static final int SNAKE_UP = 8;
+    private static final int SNAKE_DOWN = 9;
 
     /**
      * mScore: Used to track the number of apples captured mMoveDelay: number of milliseconds
@@ -121,6 +126,7 @@ public class SnakeView extends TileView {
      */
     private ArrayList<Coordinate> mSnakeTrail = new ArrayList<Coordinate>();
     private ArrayList<Coordinate> mAppleList = new ArrayList<Coordinate>();
+    private ArrayList<Coordinate> mRockList = new ArrayList<Coordinate>();
 
     /**
      * Everyone needs a little randomness in their life
@@ -171,11 +177,19 @@ public class SnakeView extends TileView {
 
         Resources r = this.getContext().getResources();
 
-        resetTiles(5);
+        resetTiles(10);
         loadTile(RED_STAR, r.getDrawable(R.drawable.redstar));
         loadTile(YELLOW_STAR, r.getDrawable(R.drawable.yellowstar));
         loadTile(GREEN_STAR, r.getDrawable(R.drawable.greenstar));
+
+        //Add apple, rock, and snake images to the game
         loadTile(APPLE, r.getDrawable(R.drawable.apple));
+        loadTile(ROCK, r.getDrawable(R.drawable.rock));
+        loadTile(SNAKE_UP, r.getDrawable(R.drawable.snakeup));
+        loadTile(SNAKE_DOWN, r.getDrawable(R.drawable.snakedown));
+        loadTile(SNAKE_LEFT, r.getDrawable(R.drawable.snakeleft));
+        loadTile(SNAKE_RIGHT, r.getDrawable(R.drawable.snakeright));
+
     }
 
     private void initNewGame() {
@@ -196,6 +210,10 @@ public class SnakeView extends TileView {
         // Two apples to start with
         addRandomApple();
         addRandomApple();
+
+        // Two rocks for difficulty
+        addRandomRock();
+        addRandomRock();
 
         mMoveDelay = 600;
         mScore = 0;
@@ -231,6 +249,8 @@ public class SnakeView extends TileView {
     public Bundle saveState() {
         Bundle map = new Bundle();
 
+        //Create a rock list like apple list
+        map.putIntArray("mRockList", coordArrayListToArray(mRockList));
         map.putIntArray("mAppleList", coordArrayListToArray(mAppleList));
         map.putInt("mDirection", Integer.valueOf(mDirection));
         map.putInt("mNextDirection", Integer.valueOf(mNextDirection));
@@ -267,6 +287,8 @@ public class SnakeView extends TileView {
     public void restoreState(Bundle icicle) {
         setMode(PAUSE);
 
+        // Restore where the rocks were when the game is paused
+        mRockList = coordArrayToArrayList(icicle.getIntArray("mRockList"));
         mAppleList = coordArrayToArrayList(icicle.getIntArray("mAppleList"));
         mDirection = icicle.getInt("mDirection");
         mNextDirection = icicle.getInt("mNextDirection");
@@ -322,6 +344,7 @@ public class SnakeView extends TileView {
             if (mDirection != EAST) {
                 mNextDirection = WEST;
             }
+
             return;
         }
 
@@ -430,6 +453,37 @@ public class SnakeView extends TileView {
     }
 
     /**
+     * Selects a random location within the garden that is not currently covered by the snake.
+     */
+    private void addRandomRock() {
+        Coordinate newCoord = null;
+        boolean found = false;
+        while (!found) {
+            // Choose a new location for our apple
+            int newX = 1 + RNG.nextInt(mXTileCount - 2);
+            int newY = 1 + RNG.nextInt(mYTileCount - 2);
+            newCoord = new Coordinate(newX, newY);
+
+            // Make sure it's not already under the snake
+            boolean collision = false;
+            int snakelength = mSnakeTrail.size();
+            for (int index = 0; index < snakelength; index++) {
+                if (mSnakeTrail.get(index).equals(newCoord)) {
+                    collision = true;
+                }
+            }
+            // if we're here and there's been no collision, then we have
+            // a good location for an apple. Otherwise, we'll circle back
+            // and try again
+            found = !collision;
+        }
+        if (newCoord == null) {
+            Log.e(TAG, "Somehow ended up with a null newCoord!");
+        }
+        mRockList.add(newCoord);
+    }
+
+    /**
      * Handles the basic update loop, checking to see if we are in the running state, determining if
      * a move should be made, updating the snake's location.
      */
@@ -441,6 +495,8 @@ public class SnakeView extends TileView {
                 clearTiles();
                 updateWalls();
                 updateSnake();
+                //Update rocks
+                updateRock();
                 updateApples();
                 mLastMove = now;
             }
@@ -473,6 +529,15 @@ public class SnakeView extends TileView {
     }
 
     /**
+     * Draws a rock or two.
+     */
+    private void updateRock() {
+        for (Coordinate c : mRockList) {
+            setTile(ROCK, c.x, c.y);
+        }
+    }
+
+    /**
      * Figure out which way the snake is going, see if he's run into anything (the walls, himself,
      * or an apple). If he's not going to die, we then add to the front and subtract from the rear
      * in order to simulate motion. If we want to grow him, we don't subtract from the rear.
@@ -489,6 +554,7 @@ public class SnakeView extends TileView {
         switch (mDirection) {
             case EAST: {
                 newHead = new Coordinate(head.x + 1, head.y);
+                setTile(6,newHead.x, newHead.y);
                 break;
             }
             case WEST: {
@@ -545,17 +611,17 @@ public class SnakeView extends TileView {
         }
 
         // push a new head onto the ArrayList and pull off the tail
-        //TODO: MAKE A SNAKE HEAD
         mSnakeTrail.add(0, newHead);
         // except if we want the snake to grow
         if (!growSnake) {
             mSnakeTrail.remove(mSnakeTrail.size() - 1);
         }
 
+        //Load the snake head where yellow_star was before
         int index = 0;
         for (Coordinate c : mSnakeTrail) {
             if (index == 0) {
-                setTile(YELLOW_STAR, c.x, c.y);
+                setTile(SNAKE_UP, c.x, c.y);
             } else {
                 setTile(RED_STAR, c.x, c.y);
             }

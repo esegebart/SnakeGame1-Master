@@ -601,7 +601,10 @@ drawable notify_panel_notification_icon_bg
 drawable redstar
 drawable rock
 drawable snake
+drawable snakedown
 drawable snakeleft
+drawable snakeright
+drawable snakeup
 drawable splash
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -699,7 +702,6 @@ id radio
 id right
 id right_icon
 id right_side
-id rock
 id screen
 id scrollIndicatorDown
 id scrollIndicatorUp
