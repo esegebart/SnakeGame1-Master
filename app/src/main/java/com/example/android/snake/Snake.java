@@ -17,6 +17,9 @@
 package com.example.android.snake;
 
 import android.app.Activity;
+import android.content.ContentValues;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Point;
 import android.media.AudioAttributes;
 import android.media.AudioManager;
@@ -24,6 +27,7 @@ import android.media.MediaPlayer;
 import android.media.SoundPool;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.BaseColumns;
 import android.provider.MediaStore;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
@@ -32,7 +36,10 @@ import android.view.View.OnTouchListener;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.sql.Date;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -55,12 +62,16 @@ public class Snake extends Activity {
     public static int MOVE_DOWN = 2;
     public static int MOVE_RIGHT = 3;
 
+    private final String USERNAME_PLACEHOLDER = "username";
+
     private static String ICICLE_KEY = "snake-view";
 
     private SnakeView mSnakeView;
 
     /**Create object of MediaPlayer*/
     private MediaPlayer eatSound;
+
+    private UserScoreOpenHelper dbHelper;
 
     /**
      * Called when Activity is first created. Turns off the title bar, sets up the content views,
@@ -127,6 +138,8 @@ public class Snake extends Activity {
             }
         });
 
+        dbHelper = new UserScoreOpenHelper(this);
+
     }
 
     @Override
@@ -140,6 +153,12 @@ public class Snake extends Activity {
     public void onSaveInstanceState(Bundle outState) {
         // Store the game state
         outState.putBundle(ICICLE_KEY, mSnakeView.saveState());
+    }
+
+    @Override
+    protected void onDestroy() {
+        dbHelper.close();
+        super.onDestroy();
     }
 
     /**
@@ -167,5 +186,66 @@ public class Snake extends Activity {
 
         return super.onKeyDown(keyCode, msg);
     }
+
+    private void writeScoreToDB(int score) {
+        // Gets the data repository in write mode
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+
+        // Create a new map of values, where column names are the keys
+        ContentValues values = new ContentValues();
+        values.put(UserScoreReaderContract.UserScoreFeedEntry.USERNAME, USERNAME_PLACEHOLDER);
+        values.put(UserScoreReaderContract.UserScoreFeedEntry.SCORE_DATE, System.currentTimeMillis());
+        values.put(UserScoreReaderContract.UserScoreFeedEntry.SCORE_DATE, score);
+
+        // Insert the new row, returning the primary key value of the new row
+        long newRowId = db.insert(UserScoreReaderContract.UserScoreFeedEntry.DICTIONARY_TABLE_NAME,
+                null, values);
+    }
+
+    private List<UserScore> readScoresFromDB() {
+        SQLiteDatabase db = dbHelper.getReadableDatabase();
+
+        // Define a projection that specifies which columns from the database
+        // you will actually use after this query.
+        String[] projection = {
+                BaseColumns._ID,
+                UserScoreReaderContract.UserScoreFeedEntry.USERNAME,
+                UserScoreReaderContract.UserScoreFeedEntry.SCORE_DATE,
+                UserScoreReaderContract.UserScoreFeedEntry.SCORE
+        };
+
+        // Filter results WHERE "title" = 'My Title'
+        // String selection = FeedEntry.COLUMN_NAME_TITLE + " = ?";
+        // String[] selectionArgs = { "My Title" };
+
+        // How you want the results sorted in the resulting Cursor
+        String sortOrder =
+                UserScoreReaderContract.UserScoreFeedEntry.SCORE_DATE + " DESC";
+
+        Cursor cursor = db.query(
+                UserScoreReaderContract.UserScoreFeedEntry.DICTIONARY_TABLE_NAME,   // The table to query
+                projection,             // The array of columns to return (pass null to get all)
+                null,              // The columns for the WHERE clause
+                null,          // The values for the WHERE clause
+                null,                   // don't group the rows
+                null,                   // don't filter by row groups
+                sortOrder,// The sort order
+                "5"
+        );
+
+        List<UserScore> scores = new ArrayList<UserScore>();
+        while(cursor.moveToNext()) {
+            String username = cursor.getString(
+                    cursor.getColumnIndexOrThrow(UserScoreReaderContract.UserScoreFeedEntry.USERNAME));;
+            long date = cursor.getLong(
+                    cursor.getColumnIndexOrThrow(UserScoreReaderContract.UserScoreFeedEntry.SCORE_DATE));
+            int score = cursor.getInt(
+                    cursor.getColumnIndexOrThrow(UserScoreReaderContract.UserScoreFeedEntry.SCORE));;
+            scores.add(new UserScore(username, date, score));
+        }
+        cursor.close();
+        return scores;
+    }
+
 
 }
