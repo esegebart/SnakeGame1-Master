@@ -17,7 +17,9 @@
 package com.example.android.snake;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.ContentValues;
+import android.content.DialogInterface;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Point;
@@ -37,6 +39,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.sql.Date;
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
@@ -72,6 +75,8 @@ public class Snake extends Activity {
     private MediaPlayer eatSound;
 
     private UserScoreOpenHelper dbHelper;
+
+    private List<UserScore> userScores;
 
     /**
      * Called when Activity is first created. Turns off the title bar, sets up the content views,
@@ -139,6 +144,16 @@ public class Snake extends Activity {
         });
 
         dbHelper = new UserScoreOpenHelper(this);
+        userScores = readScoresFromDB();
+        if (!userScores.isEmpty()) {
+            showScore(userScores.get(0));
+        }
+        mSnakeView.setGameOverListener(new SnakeView.GameOverListener() {
+            @Override
+            public void onEventOccurred(long score) {
+                writeScoreToDB(score);
+            }
+        });
 
     }
 
@@ -187,7 +202,7 @@ public class Snake extends Activity {
         return super.onKeyDown(keyCode, msg);
     }
 
-    private void writeScoreToDB(int score) {
+    private void writeScoreToDB(long score) {
         // Gets the data repository in write mode
         SQLiteDatabase db = dbHelper.getWritableDatabase();
 
@@ -195,7 +210,7 @@ public class Snake extends Activity {
         ContentValues values = new ContentValues();
         values.put(UserScoreReaderContract.UserScoreFeedEntry.USERNAME, USERNAME_PLACEHOLDER);
         values.put(UserScoreReaderContract.UserScoreFeedEntry.SCORE_DATE, System.currentTimeMillis());
-        values.put(UserScoreReaderContract.UserScoreFeedEntry.SCORE_DATE, score);
+        values.put(UserScoreReaderContract.UserScoreFeedEntry.SCORE, score);
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId = db.insert(UserScoreReaderContract.UserScoreFeedEntry.DICTIONARY_TABLE_NAME,
@@ -208,15 +223,10 @@ public class Snake extends Activity {
         // Define a projection that specifies which columns from the database
         // you will actually use after this query.
         String[] projection = {
-                BaseColumns._ID,
                 UserScoreReaderContract.UserScoreFeedEntry.USERNAME,
                 UserScoreReaderContract.UserScoreFeedEntry.SCORE_DATE,
                 UserScoreReaderContract.UserScoreFeedEntry.SCORE
         };
-
-        // Filter results WHERE "title" = 'My Title'
-        // String selection = FeedEntry.COLUMN_NAME_TITLE + " = ?";
-        // String[] selectionArgs = { "My Title" };
 
         // How you want the results sorted in the resulting Cursor
         String sortOrder =
@@ -246,6 +256,25 @@ public class Snake extends Activity {
         cursor.close();
         return scores;
     }
+
+    private void showScore(UserScore userScore) {
+        if (userScore != null) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setMessage("Your last score was " + userScore.score +
+                    " on " + DateFormat.getInstance().format(userScore.date)
+            + "!")
+                    .setCancelable(false)
+                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            //do things
+                        }
+                    });
+            AlertDialog alert = builder.create();
+            alert.show();
+        }
+    }
+
+
 
 
 }

@@ -59,6 +59,18 @@ public class SnakeView extends TileView {
         void onEventOccurred();
     }
 
+    /**Create a SnakeMovementListener member variable*/
+    private GameOverListener gameOverListener;
+
+    /**Setter for SnakeMovementListener*/
+    public void setGameOverListener (GameOverListener gameOverListener) {
+        this.gameOverListener = gameOverListener;
+    }
+
+    public interface GameOverListener {
+        void onEventOccurred(long score);
+    }
+
     /**
      * Current mode of application: READY to run, RUNNING, or you have already lost. static final
      * ints are used instead of an enum for performance reasons.
@@ -583,6 +595,7 @@ public class SnakeView extends TileView {
             /**Call the method that triggers the event to play sound*/
             triggerSnakeMovementEvent();
             setMode(LOSE);
+            triggerGameOverEvent();
             return;
         }
 
@@ -593,6 +606,7 @@ public class SnakeView extends TileView {
             if (c.equals(newHead)) {
                 /**Play a sound when snake collides with himself*/
                 triggerSnakeMovementEvent();
+                triggerGameOverEvent();
                 setMode(LOSE);
                 return;
             }
@@ -677,6 +691,12 @@ public class SnakeView extends TileView {
     public void triggerSnakeMovementEvent() {
         if (snakeMovementListener != null) {
             snakeMovementListener.onEventOccurred();
+        }
+    }
+
+    public void triggerGameOverEvent() {
+        if (gameOverListener != null) {
+            gameOverListener.onEventOccurred(mScore);
         }
     }
 
