@@ -17,6 +17,9 @@
 package com.example.android.snake;
 
 import android.app.Activity;
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Point;
 import android.media.AudioAttributes;
 import android.media.AudioManager;
@@ -47,6 +50,9 @@ import java.util.ArrayList;
 
 public class Snake extends Activity {
 
+    /**Create a global private variable for UserScoreOpenHelper*/
+    private
+
     /**
      * Constants for desired direction of moving the snake
      */
@@ -62,6 +68,9 @@ public class Snake extends Activity {
     /**Create object of MediaPlayer*/
     private MediaPlayer eatSound;
 
+    /**Create object of UserScoreOpenHelper*/
+    private UserScoreOpenHelper userScoreOpenHelper;
+
     /**
      * Called when Activity is first created. Turns off the title bar, sets up the content views,
      * and fires up the SnakeView.
@@ -71,6 +80,9 @@ public class Snake extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.snake_layout);
+
+        /**Instantiate UserScoreOpenHelper object*/
+        userScoreOpenHelper = new UserScoreOpenHelper(this);
 
         /**Load the sound into the eatSound variable*/
         eatSound = MediaPlayer.create(this, R.raw.eating);
@@ -167,5 +179,14 @@ public class Snake extends Activity {
 
         return super.onKeyDown(keyCode, msg);
     }
+
+    // Gets the data repository in write mode
+    SQLiteDatabase userScores = userScoreOpenHelper.getWritableDatabase();
+
+    // Create a new map of values, where column names are the key
+    ContentValues values = new ContentValues();
+    values.put(UserScoreContract.UserScoreEntry.COLUMN_USERNAME, "username");
+    values.put(UserScoreContract.UserScoreEntry.COLUMN_SCORE, "score");
+    values.put(UserScoreContract.UserScoreEntry.COLUMN_DATE, "date");
 
 }

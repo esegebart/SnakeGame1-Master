@@ -1,4 +1,4 @@
-#Tue Aug 27 19:23:15 CDT 2019
+#Tue Aug 27 20:01:13 CDT 2019
 base.0=C\:\\Users\\elyse\\OneDrive\\Documents\\IT4784_Adv_Mobile_App_Dev\\Unit_2\\SnakeGame1-master\\SnakeGame1-master\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

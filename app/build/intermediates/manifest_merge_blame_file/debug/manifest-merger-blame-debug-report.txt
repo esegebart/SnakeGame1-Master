@@ -50,31 +50,30 @@
 41        android:debuggable="true"
 42        android:icon="@drawable/ic_launcher"
 42-->C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:33:16-52
-43        android:label="@string/app_name"
+43        android:label="@string/app_name" >
 43-->C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:33:53-85
-44        android:testOnly="true" >
-45
-46        <!-- -Add the splash screen to the manifest -->
-47        <activity
-47-->C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:35:5-42:16
-48            android:name="com.example.android.snake.SplashActivity"
-48-->C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:36:9-39
-49            android:theme="@style/SplashTheme" >
-49-->C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:37:9-43
-50            <intent-filter>
-50-->C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:38:7-41:23
-51                <action android:name="android.intent.action.MAIN" />
-51-->C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:39:9-61
-51-->C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:39:17-58
-52
-53                <category android:name="android.intent.category.LAUNCHER" />
-53-->C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:40:9-69
-53-->C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:40:19-66
-54            </intent-filter>
-55        </activity>
-56        <activity android:name="com.example.android.snake.Snake" />
-56-->C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:44:5-39
-56-->C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:44:15-36
-57    </application>
-58
-59</manifest>
+44
+45        <!-- -Add the splash screen to the manifest -->
+46        <activity
+46-->C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:35:5-42:16
+47            android:name="com.example.android.snake.SplashActivity"
+47-->C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:36:9-39
+48            android:theme="@style/SplashTheme" >
+48-->C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:37:9-43
+49            <intent-filter>
+49-->C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:38:7-41:23
+50                <action android:name="android.intent.action.MAIN" />
+50-->C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:39:9-61
+50-->C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:39:17-58
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+52-->C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:40:9-69
+52-->C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:40:19-66
+53            </intent-filter>
+54        </activity>
+55        <activity android:name="com.example.android.snake.Snake" />
+55-->C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:44:5-39
+55-->C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:44:15-36
+56    </application>
+57
+58</manifest>
