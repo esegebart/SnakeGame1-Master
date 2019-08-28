@@ -195,6 +195,7 @@ public class SnakeView extends TileView {
     private void initNewGame() {
         mSnakeTrail.clear();
         mAppleList.clear();
+        mRockList.clear();
 
         // For now we're just going to load up a short default eastbound snake
         // that's just turned north
@@ -555,19 +556,22 @@ public class SnakeView extends TileView {
         switch (mDirection) {
             case EAST: {
                 newHead = new Coordinate(head.x + 1, head.y);
-                snakeHeadDirection = SNAKE_LEFT;
+                snakeHeadDirection = SNAKE_RIGHT;
                 break;
             }
             case WEST: {
                 newHead = new Coordinate(head.x - 1, head.y);
+                snakeHeadDirection = SNAKE_LEFT;
                 break;
             }
             case NORTH: {
                 newHead = new Coordinate(head.x, head.y - 1);
+                snakeHeadDirection = SNAKE_UP;
                 break;
             }
             case SOUTH: {
                 newHead = new Coordinate(head.x, head.y + 1);
+                snakeHeadDirection = SNAKE_DOWN;
                 break;
             }
         }
@@ -608,6 +612,18 @@ public class SnakeView extends TileView {
                 mMoveDelay *= 0.9;
 
                 growSnake = true;
+            }
+        }
+
+        // Lookout for rocks
+        int rockCount = mRockList.size();
+        for (int rockindex = 0; rockindex < applecount; rockindex++) {
+            Coordinate c = mRockList.get(rockindex);
+            if (c.equals(newHead)) {
+        /**Play a sound when snake runs into rock*/
+                triggerSnakeMovementEvent();
+                setMode(LOSE);
+                return;
             }
         }
 
