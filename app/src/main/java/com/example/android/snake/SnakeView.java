@@ -550,11 +550,12 @@ public class SnakeView extends TileView {
         Coordinate newHead = new Coordinate(1, 1);
 
         mDirection = mNextDirection;
+        int snakeHeadDirection = SNAKE_UP;
 
         switch (mDirection) {
             case EAST: {
                 newHead = new Coordinate(head.x + 1, head.y);
-                setTile(6,newHead.x, newHead.y);
+                snakeHeadDirection = SNAKE_LEFT;
                 break;
             }
             case WEST: {
@@ -621,7 +622,7 @@ public class SnakeView extends TileView {
         int index = 0;
         for (Coordinate c : mSnakeTrail) {
             if (index == 0) {
-                setTile(SNAKE_UP, c.x, c.y);
+                setTile(snakeHeadDirection, c.x, c.y);
             } else {
                 setTile(RED_STAR, c.x, c.y);
             }
