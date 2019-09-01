@@ -29,6 +29,17 @@
     app:colorSegmentFour="@color/muted_green"
      />
 
+  <TextView android:id="@+id/userScores"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_gravity="center"
+      android:gravity="right"
+      android:padding="4dp"
+      android:text="@string/user_scores"
+      android:textColor="@color/text_violet"
+      android:textSize="24sp"
+      android:visibility="visible" />
+
   <com.example.android.snake.SnakeView
     android:id="@+id/snake"
     android:layout_width="match_parent"

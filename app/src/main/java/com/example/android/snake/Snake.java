@@ -31,6 +31,8 @@ import android.os.Build;
 import android.os.Bundle;
 import android.provider.BaseColumns;
 import android.provider.MediaStore;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
@@ -55,7 +57,7 @@ import java.util.List;
  * 
  */
 
-public class Snake extends Activity {
+public class Snake extends AppCompatActivity {
 
     /**
      * Constants for desired direction of moving the snake
@@ -70,6 +72,7 @@ public class Snake extends Activity {
     private static String ICICLE_KEY = "snake-view";
 
     private SnakeView mSnakeView;
+    private TextView mUserScoreButton;
 
     /**Create object of MediaPlayer*/
     private MediaPlayer eatSound;
@@ -94,6 +97,8 @@ public class Snake extends Activity {
         mSnakeView = (SnakeView) findViewById(R.id.snake);
         mSnakeView.setDependentViews((TextView) findViewById(R.id.text),
                 findViewById(R.id.arrowContainer), findViewById(R.id.background));
+
+        mUserScoreButton = (TextView) findViewById(R.id.userScores);
 
         if (savedInstanceState == null) {
             // We were just launched -- set up a new game
@@ -144,7 +149,7 @@ public class Snake extends Activity {
         });
 
         dbHelper = new UserScoreOpenHelper(this);
-        userScores = readScoresFromDB();
+        userScores = readScoresFromDB(1);
         if (!userScores.isEmpty()) {
             showScore(userScores.get(0));
         }
@@ -154,6 +159,19 @@ public class Snake extends Activity {
                 writeScoreToDB(score);
             }
         });
+
+        mUserScoreButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                userScores = readScoresFromDB(5);
+                UserScoresDialogFragment dialog = new UserScoresDialogFragment()
+                        .newInstance((ArrayList<UserScore>) userScores);
+                FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                String tag = "tag";
+                dialog.show(ft, tag);
+            }
+        });
+
 
     }
 
@@ -166,6 +184,7 @@ public class Snake extends Activity {
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
         // Store the game state
         outState.putBundle(ICICLE_KEY, mSnakeView.saveState());
     }
@@ -217,7 +236,7 @@ public class Snake extends Activity {
                 null, values);
     }
 
-    private List<UserScore> readScoresFromDB() {
+    private List<UserScore> readScoresFromDB(int limitQuery) {
         SQLiteDatabase db = dbHelper.getReadableDatabase();
 
         // Define a projection that specifies which columns from the database
@@ -240,7 +259,7 @@ public class Snake extends Activity {
                 null,                   // don't group the rows
                 null,                   // don't filter by row groups
                 sortOrder,// The sort order
-                "5"
+                Integer.toString(limitQuery)
         );
 
         List<UserScore> scores = new ArrayList<UserScore>();

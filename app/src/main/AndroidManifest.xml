@@ -41,7 +41,7 @@
       </intent-filter>
     </activity>
 
-    <activity android:name=".Snake" />
+    <activity android:name=".Snake" android:theme="@style/AppTheme"/>
 
   </application>
 

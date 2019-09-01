@@ -1,6 +1,8 @@
 package com.example.android.snake;
 
-public class UserScore {
+import java.io.Serializable;
+
+public class UserScore implements Serializable {
 
     public UserScore() {}
 
