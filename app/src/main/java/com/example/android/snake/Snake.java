@@ -16,33 +16,23 @@
 
 package com.example.android.snake;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.ContentValues;
 import android.content.DialogInterface;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.graphics.Point;
-import android.media.AudioAttributes;
-import android.media.AudioManager;
 import android.media.MediaPlayer;
-import android.media.SoundPool;
-import android.os.Build;
 import android.os.Bundle;
-import android.provider.BaseColumns;
-import android.provider.MediaStore;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.fragment.app.FragmentTransaction;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
-import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.sql.Date;
 import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -96,7 +86,8 @@ public class Snake extends AppCompatActivity {
 
         mSnakeView = (SnakeView) findViewById(R.id.snake);
         mSnakeView.setDependentViews((TextView) findViewById(R.id.text),
-                findViewById(R.id.arrowContainer), findViewById(R.id.background));
+                findViewById(R.id.arrowContainer), findViewById(R.id.background),
+                (TextView) findViewById(R.id.userScores));
 
         mUserScoreButton = (TextView) findViewById(R.id.userScores);
 

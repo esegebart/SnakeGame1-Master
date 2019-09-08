@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@android:color/white"
     android:layout_height="match_parent">
+
+    <TextView android:id="@+id/userScores"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="right"
+        android:padding="4dp"
+        android:text="@string/user_scores"
+        android:textColor="@color/text_violet"
+        android:textSize="24sp"
+        android:visibility="visible" />
 
 </LinearLayout>
