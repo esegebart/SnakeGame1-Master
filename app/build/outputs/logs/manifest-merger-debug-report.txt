@@ -1,138 +1,289 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:23:1-48:12
-INJECTED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:23:1-48:12
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\bbf07aa1da9ab954374e693dfcc335b9\appcompat-v7-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\59df75d251431efe4d450d41cc6b083b\support-fragment-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\45d50504f4c11c4f549bb8efafb39de8\animated-vector-drawable-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\ee7de4c472f1da0a0213606950b8c4e7\support-core-ui-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\e6827550b79bb297911c95f109ecf5ac\support-core-utils-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\cd2aa2e9401906350c2bd9da065e1f33\support-vector-drawable-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\e8e201b21520ad3812ed914e69a9b405\loader-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\00866cffd6a67b64ccbc8d2d951560dc\viewpager-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\5d3c4801a740528a85d2e670b2dd23b7\coordinatorlayout-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\109e2debe5d47fa4d8f7fe1f15c611f3\drawerlayout-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\640954c0bd14789761b1de9b02daedae\slidingpanelayout-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\8c3534d87178de95eb9cb75f77214055\customview-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\49f9e7bd74012c3341e4a938529d56fe\swiperefreshlayout-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\699e03d2cbc668da0d189768d4447a8b\asynclayoutinflater-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\dd1cf78f22bdd94f550130b281f27c97\support-compat-28.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\8bb2478d12c0baf5b421024800cd7dbb\versionedparcelable-28.0.0\AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\406adf1b047a0fb17968819a70f96dd9\cursoradapter-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\2a54fb7d4a09e43fd13a659c38a9bf2a\runtime-1.1.1\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\d86ffcf39ba8aec22a7ebfd4c1172e3f\documentfile-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\7f3ed6ce49569e0dbf9accf24b63a15b\localbroadcastmanager-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\707c6356496c3791d321c055fe777af8\print-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\426821499609b124edd91485548e30d0\viewmodel-1.1.1\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\b5f1a18436322a4d6243b4d563cfece4\livedata-1.1.1\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\6104c576404b17797d5f42ae60105d1d\livedata-core-1.1.1\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\7c5e711cb7599bc18a19cc1df98bc8d6\runtime-1.1.1\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\525bf97e52a2b96ba94f7509a71e8a56\interpolator-28.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:23:1-48:12
+ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:23:1-50:12
+INJECTED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:23:1-50:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\b320a443effd06c78f4f9e5ddfe89b1a\appcompat-v7-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\ad6141accb91052c9870b8d2e14fec9d\recyclerview-v7-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-analytics:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\f739abbdbe1771572353e0509bfef6ca\firebase-analytics-17.0.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-database:19.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\0027c910a64e8deac4a49ba74b5b709c\firebase-database-19.0.0\AndroidManifest.xml:15:1-38:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\845e091032ca2061619bb35b5c2614bb\support-fragment-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\f7239896cd8e1e382a3fd71565b8b288\animated-vector-drawable-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\ef79124f0bd9c34f8348139d6c78a5b7\support-core-ui-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\f94f911c48b784483863caa0d1b69c79\support-core-utils-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\43aa7bdd8895886c797a042cb22a6544\support-vector-drawable-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\c6caa57dfc132cbd041e0dae542be0a2\loader-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\dd5573a89bd75c3ee1c53810410ef2ba\viewpager-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\aba2432f202774b83983d220847ad226\coordinatorlayout-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\16c10e4d08e36217eb0763f1e03f94a9\drawerlayout-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\b6019c7a0b9ddcb41301864a6ddfb18f\slidingpanelayout-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\624064a09b6288a5178059d2123a43cf\customview-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\8524300dfafb44db53d40d03fc218ceb\swiperefreshlayout-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\8f12292d72be7916a05aca35e236c5a7\asynclayoutinflater-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\895559d2bf708e950c8f9daa6bb1fb41\support-compat-28.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\eec9b276221d56f06908dc491920398d\versionedparcelable-28.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\990158c927c012d1677031ad14165542\cursoradapter-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\fe6283a58839026a8ad542672ca589c6\runtime-1.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\1697d9bc7a544183551856c5571ddc50\documentfile-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\484db9973b2cf3f7eff1e10b8ff90ddc\localbroadcastmanager-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\d43503f79af7698b41c1fdadbf3cc0ed\print-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\83a6efe989782ba0ff7ff34408c7f22f\viewmodel-1.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\0e337cc19638747a72f0dd7361d3b1f9\interpolator-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\987e9b10c40dacf71c326fb133cfcf12\livedata-1.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\bcc6fd35cc65f90790bfddae72ea5b9b\livedata-core-1.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\1754c37170a596c2565dcdf21351b275\runtime-1.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-measurement:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\146d983f68704dae9fb924750805fa0a\play-services-measurement-17.0.1\AndroidManifest.xml:17:1-55:12
+MERGED from [com.google.android.gms:play-services-measurement-api:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\bde5eb0318f54afaebfddfd7744e500c\play-services-measurement-api-17.0.1\AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\bfe393baab2fa01b1bcbb62d1de424a3\play-services-measurement-sdk-17.0.1\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\c974b43e57f2ece2b339e0a98aaa403c\firebase-auth-interop-18.0.0\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\856a947c1a9c6ebc4d2fc0c2fb4dbece\firebase-iid-19.0.0\AndroidManifest.xml:17:1-47:12
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\e7f18d9a4dd15f2f39538b6f6728a054\firebase-iid-interop-17.0.0\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\951b5e7f354daaaf8db57d3e12181016\play-services-base-17.0.0\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.firebase:firebase-common:19.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\b1384c5fdf3acad4baebcde528b744a2\firebase-common-19.0.0\AndroidManifest.xml:2:1-19:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\75185506230655574b8334cb643643f0\play-services-tasks-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\895850673c0f324b83bbc28dd883a50b\play-services-measurement-impl-17.0.1\AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\70dcb0b542e9a9cd0075815f79dd0e4c\play-services-measurement-sdk-api-17.0.1\AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-measurement-base:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\8a33a6bcb39787128557280c6f457c70\play-services-measurement-base-17.0.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\338fab4b05d87887cad32009aa98de25\play-services-stats-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\698268a0a81e9f05504f9f90dbf99e08\firebase-measurement-connector-18.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\f4d430d7612f12d82e3c4400aed4b652\play-services-ads-identifier-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\0ada2b31d7171ba2bff9cdd038b36ee2\play-services-basement-17.0.0\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\1cbd3b0b2910c69c982ed3cdc1333c00\fragment-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\33904a9952e04540992fd4e899a6e29f\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\45739e064fd8ad2faa9c3686c49a0516\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\704f77bb835d112513bfb707984cbdc1\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\ac681daf82c56bbcb32cd485fc064a28\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\793a97fec7a6dab603ab3ae8209f13cc\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\599a956fc5880721b736c36d7a2a90a9\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\ab3a184af13a3a82dd474493bbfa3bb1\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\a6c2f02f5bfac95e56aa3f49c83ac397\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\190ec68b3797b99e27d4d5621c313ff7\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\cea9d07eed335b7021facd428f08a0ed\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\1bd162d1e9982c51999cbe410f0d807a\core-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\0150aea6f0427790b968ac16d0f01a76\versionedparcelable-1.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\a258954b59e52ea64468e7c8b611841e\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\ac265cfd5669b686a3cba2f45a6e36b7\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\7fcbef39c4d63cdee011faaa088ab3cd\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\31820fea8d5074e894dcda880d2751ad\lifecycle-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\ea6b3260a9a4d94d7ea9aaa5a327bd73\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\67688366c6a6c762e55784305fcbc09b\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\f5e5093a6d2ffb564f346d2769a020dc\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\c92e9c6549150a4bd8eb347f54ac769d\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\e542a78b280a084fd48769af2f842423\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\25fdd493a672d7b5d446aa2af8c06677\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-database-collection:17.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\6df0cf79b64fd2c26bf8b27a76ce287b\firebase-database-collection-17.0.0\AndroidManifest.xml:2:1-7:12
+INJECTED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:23:1-50:12
 	package
-		ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:24:3-38
+		ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:25:5-40
 		INJECTED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:24:5-51
 	xmlns:android
 		ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:23:11-69
 uses-feature#android.hardware.touchscreen
-ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:27:3-28:32
+ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:28:3-29:32
 	android:required
-		ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:28:5-29
+		ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:29:5-29
 	android:name
-		ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:27:17-60
+		ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:28:17-60
 supports-screens
-ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:30:3-51
+ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:31:3-51
 	android:largeScreens
-		ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:30:21-48
+		ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:31:21-48
 application
-ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:33:3-46:17
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\dd1cf78f22bdd94f550130b281f27c97\support-compat-28.0.0\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\dd1cf78f22bdd94f550130b281f27c97\support-compat-28.0.0\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\8bb2478d12c0baf5b421024800cd7dbb\versionedparcelable-28.0.0\AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\8bb2478d12c0baf5b421024800cd7dbb\versionedparcelable-28.0.0\AndroidManifest.xml:22:5-23:19
-	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\dd1cf78f22bdd94f550130b281f27c97\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:34:3-48:17
+REJECTED from [com.google.firebase:firebase-analytics:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\f739abbdbe1771572353e0509bfef6ca\firebase-analytics-17.0.1\AndroidManifest.xml:7:5-20
+REJECTED from [com.google.firebase:firebase-database:19.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\0027c910a64e8deac4a49ba74b5b709c\firebase-database-19.0.0\AndroidManifest.xml:28:5-36:19
+REJECTED from [com.android.support:support-compat:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\895559d2bf708e950c8f9daa6bb1fb41\support-compat-28.0.0\AndroidManifest.xml:22:5-94
+REJECTED from [com.android.support:versionedparcelable:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\eec9b276221d56f06908dc491920398d\versionedparcelable-28.0.0\AndroidManifest.xml:22:5-23:19
+REJECTED from [com.google.android.gms:play-services-measurement:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\146d983f68704dae9fb924750805fa0a\play-services-measurement-17.0.1\AndroidManifest.xml:28:5-53:19
+REJECTED from [com.google.android.gms:play-services-measurement-api:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\bde5eb0318f54afaebfddfd7744e500c\play-services-measurement-api-17.0.1\AndroidManifest.xml:26:5-34:19
+REJECTED from [com.google.android.gms:play-services-measurement-sdk:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\bfe393baab2fa01b1bcbb62d1de424a3\play-services-measurement-sdk-17.0.1\AndroidManifest.xml:22:5-23:19
+REJECTED from [com.google.firebase:firebase-auth-interop:18.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\c974b43e57f2ece2b339e0a98aaa403c\firebase-auth-interop-18.0.0\AndroidManifest.xml:7:5-8:19
+REJECTED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\856a947c1a9c6ebc4d2fc0c2fb4dbece\firebase-iid-19.0.0\AndroidManifest.xml:28:5-45:19
+REJECTED from [com.google.firebase:firebase-iid-interop:17.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\e7f18d9a4dd15f2f39538b6f6728a054\firebase-iid-interop-17.0.0\AndroidManifest.xml:7:5-8:19
+REJECTED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\951b5e7f354daaaf8db57d3e12181016\play-services-base-17.0.0\AndroidManifest.xml:22:5-27:19
+REJECTED from [com.google.firebase:firebase-common:19.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\b1384c5fdf3acad4baebcde528b744a2\firebase-common-19.0.0\AndroidManifest.xml:11:5-17:19
+REJECTED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\75185506230655574b8334cb643643f0\play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+REJECTED from [com.google.android.gms:play-services-measurement-impl:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\895850673c0f324b83bbc28dd883a50b\play-services-measurement-impl-17.0.1\AndroidManifest.xml:28:5-38:19
+REJECTED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\70dcb0b542e9a9cd0075815f79dd0e4c\play-services-measurement-sdk-api-17.0.1\AndroidManifest.xml:28:5-38:19
+REJECTED from [com.google.android.gms:play-services-measurement-base:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\8a33a6bcb39787128557280c6f457c70\play-services-measurement-base-17.0.1\AndroidManifest.xml:7:5-20
+REJECTED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\338fab4b05d87887cad32009aa98de25\play-services-stats-17.0.0\AndroidManifest.xml:7:5-20
+REJECTED from [com.google.firebase:firebase-measurement-connector:18.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\698268a0a81e9f05504f9f90dbf99e08\firebase-measurement-connector-18.0.0\AndroidManifest.xml:22:5-23:19
+REJECTED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\f4d430d7612f12d82e3c4400aed4b652\play-services-ads-identifier-17.0.0\AndroidManifest.xml:22:5-20
+REJECTED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\0ada2b31d7171ba2bff9cdd038b36ee2\play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
+REJECTED from [androidx.core:core:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\1bd162d1e9982c51999cbe410f0d807a\core-1.0.0\AndroidManifest.xml:22:5-89
+REJECTED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\0150aea6f0427790b968ac16d0f01a76\versionedparcelable-1.0.0\AndroidManifest.xml:22:5-23:19
+	tools:node
+		ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:35:7-27
 	android:label
-		ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:33:53-85
+		ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:34:53-85
 	android:icon
-		ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:33:16-52
+		ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:34:16-52
 activity#com.example.android.snake.SplashActivity
-ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:35:5-42:16
+ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:37:5-44:16
 	android:theme
-		ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:37:9-43
+		ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:39:9-43
 	android:name
-		ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:36:9-39
+		ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:38:9-39
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:38:7-41:23
+ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:40:7-43:23
 action#android.intent.action.MAIN
-ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:39:9-61
+ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:41:9-61
 	android:name
-		ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:39:17-58
+		ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:41:17-58
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:40:9-69
+ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:42:9-69
 	android:name
-		ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:40:19-66
+		ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:42:19-66
 activity#com.example.android.snake.Snake
-ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:44:5-39
+ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:46:5-70
+	android:theme
+		ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:46:37-68
 	android:name
-		ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:44:15-36
+		ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml:46:15-36
 uses-sdk
 INJECTED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\bbf07aa1da9ab954374e693dfcc335b9\appcompat-v7-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\bbf07aa1da9ab954374e693dfcc335b9\appcompat-v7-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\59df75d251431efe4d450d41cc6b083b\support-fragment-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\59df75d251431efe4d450d41cc6b083b\support-fragment-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\45d50504f4c11c4f549bb8efafb39de8\animated-vector-drawable-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\45d50504f4c11c4f549bb8efafb39de8\animated-vector-drawable-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\ee7de4c472f1da0a0213606950b8c4e7\support-core-ui-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\ee7de4c472f1da0a0213606950b8c4e7\support-core-ui-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\e6827550b79bb297911c95f109ecf5ac\support-core-utils-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\e6827550b79bb297911c95f109ecf5ac\support-core-utils-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\cd2aa2e9401906350c2bd9da065e1f33\support-vector-drawable-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\cd2aa2e9401906350c2bd9da065e1f33\support-vector-drawable-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\e8e201b21520ad3812ed914e69a9b405\loader-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\e8e201b21520ad3812ed914e69a9b405\loader-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\00866cffd6a67b64ccbc8d2d951560dc\viewpager-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\00866cffd6a67b64ccbc8d2d951560dc\viewpager-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\5d3c4801a740528a85d2e670b2dd23b7\coordinatorlayout-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\5d3c4801a740528a85d2e670b2dd23b7\coordinatorlayout-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\109e2debe5d47fa4d8f7fe1f15c611f3\drawerlayout-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\109e2debe5d47fa4d8f7fe1f15c611f3\drawerlayout-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\640954c0bd14789761b1de9b02daedae\slidingpanelayout-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\640954c0bd14789761b1de9b02daedae\slidingpanelayout-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\8c3534d87178de95eb9cb75f77214055\customview-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\8c3534d87178de95eb9cb75f77214055\customview-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\49f9e7bd74012c3341e4a938529d56fe\swiperefreshlayout-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\49f9e7bd74012c3341e4a938529d56fe\swiperefreshlayout-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\699e03d2cbc668da0d189768d4447a8b\asynclayoutinflater-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\699e03d2cbc668da0d189768d4447a8b\asynclayoutinflater-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\dd1cf78f22bdd94f550130b281f27c97\support-compat-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\dd1cf78f22bdd94f550130b281f27c97\support-compat-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\8bb2478d12c0baf5b421024800cd7dbb\versionedparcelable-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\8bb2478d12c0baf5b421024800cd7dbb\versionedparcelable-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\406adf1b047a0fb17968819a70f96dd9\cursoradapter-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\406adf1b047a0fb17968819a70f96dd9\cursoradapter-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\2a54fb7d4a09e43fd13a659c38a9bf2a\runtime-1.1.1\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\2a54fb7d4a09e43fd13a659c38a9bf2a\runtime-1.1.1\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\d86ffcf39ba8aec22a7ebfd4c1172e3f\documentfile-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\d86ffcf39ba8aec22a7ebfd4c1172e3f\documentfile-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\7f3ed6ce49569e0dbf9accf24b63a15b\localbroadcastmanager-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\7f3ed6ce49569e0dbf9accf24b63a15b\localbroadcastmanager-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\707c6356496c3791d321c055fe777af8\print-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\707c6356496c3791d321c055fe777af8\print-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\426821499609b124edd91485548e30d0\viewmodel-1.1.1\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\426821499609b124edd91485548e30d0\viewmodel-1.1.1\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\b5f1a18436322a4d6243b4d563cfece4\livedata-1.1.1\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\b5f1a18436322a4d6243b4d563cfece4\livedata-1.1.1\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\6104c576404b17797d5f42ae60105d1d\livedata-core-1.1.1\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\6104c576404b17797d5f42ae60105d1d\livedata-core-1.1.1\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\7c5e711cb7599bc18a19cc1df98bc8d6\runtime-1.1.1\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\7c5e711cb7599bc18a19cc1df98bc8d6\runtime-1.1.1\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\525bf97e52a2b96ba94f7509a71e8a56\interpolator-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\525bf97e52a2b96ba94f7509a71e8a56\interpolator-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\b320a443effd06c78f4f9e5ddfe89b1a\appcompat-v7-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\b320a443effd06c78f4f9e5ddfe89b1a\appcompat-v7-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\ad6141accb91052c9870b8d2e14fec9d\recyclerview-v7-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\ad6141accb91052c9870b8d2e14fec9d\recyclerview-v7-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\f739abbdbe1771572353e0509bfef6ca\firebase-analytics-17.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\f739abbdbe1771572353e0509bfef6ca\firebase-analytics-17.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-database:19.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\0027c910a64e8deac4a49ba74b5b709c\firebase-database-19.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-database:19.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\0027c910a64e8deac4a49ba74b5b709c\firebase-database-19.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\845e091032ca2061619bb35b5c2614bb\support-fragment-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\845e091032ca2061619bb35b5c2614bb\support-fragment-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\f7239896cd8e1e382a3fd71565b8b288\animated-vector-drawable-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\f7239896cd8e1e382a3fd71565b8b288\animated-vector-drawable-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\ef79124f0bd9c34f8348139d6c78a5b7\support-core-ui-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\ef79124f0bd9c34f8348139d6c78a5b7\support-core-ui-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\f94f911c48b784483863caa0d1b69c79\support-core-utils-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\f94f911c48b784483863caa0d1b69c79\support-core-utils-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\43aa7bdd8895886c797a042cb22a6544\support-vector-drawable-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\43aa7bdd8895886c797a042cb22a6544\support-vector-drawable-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\c6caa57dfc132cbd041e0dae542be0a2\loader-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\c6caa57dfc132cbd041e0dae542be0a2\loader-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\dd5573a89bd75c3ee1c53810410ef2ba\viewpager-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\dd5573a89bd75c3ee1c53810410ef2ba\viewpager-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\aba2432f202774b83983d220847ad226\coordinatorlayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\aba2432f202774b83983d220847ad226\coordinatorlayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\16c10e4d08e36217eb0763f1e03f94a9\drawerlayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\16c10e4d08e36217eb0763f1e03f94a9\drawerlayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\b6019c7a0b9ddcb41301864a6ddfb18f\slidingpanelayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\b6019c7a0b9ddcb41301864a6ddfb18f\slidingpanelayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\624064a09b6288a5178059d2123a43cf\customview-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\624064a09b6288a5178059d2123a43cf\customview-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\8524300dfafb44db53d40d03fc218ceb\swiperefreshlayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\8524300dfafb44db53d40d03fc218ceb\swiperefreshlayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\8f12292d72be7916a05aca35e236c5a7\asynclayoutinflater-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\8f12292d72be7916a05aca35e236c5a7\asynclayoutinflater-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\895559d2bf708e950c8f9daa6bb1fb41\support-compat-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\895559d2bf708e950c8f9daa6bb1fb41\support-compat-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\eec9b276221d56f06908dc491920398d\versionedparcelable-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\eec9b276221d56f06908dc491920398d\versionedparcelable-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\990158c927c012d1677031ad14165542\cursoradapter-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\990158c927c012d1677031ad14165542\cursoradapter-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\fe6283a58839026a8ad542672ca589c6\runtime-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\fe6283a58839026a8ad542672ca589c6\runtime-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\1697d9bc7a544183551856c5571ddc50\documentfile-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\1697d9bc7a544183551856c5571ddc50\documentfile-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\484db9973b2cf3f7eff1e10b8ff90ddc\localbroadcastmanager-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\484db9973b2cf3f7eff1e10b8ff90ddc\localbroadcastmanager-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\d43503f79af7698b41c1fdadbf3cc0ed\print-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\d43503f79af7698b41c1fdadbf3cc0ed\print-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\83a6efe989782ba0ff7ff34408c7f22f\viewmodel-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\83a6efe989782ba0ff7ff34408c7f22f\viewmodel-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\0e337cc19638747a72f0dd7361d3b1f9\interpolator-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\0e337cc19638747a72f0dd7361d3b1f9\interpolator-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\987e9b10c40dacf71c326fb133cfcf12\livedata-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\987e9b10c40dacf71c326fb133cfcf12\livedata-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\bcc6fd35cc65f90790bfddae72ea5b9b\livedata-core-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\bcc6fd35cc65f90790bfddae72ea5b9b\livedata-core-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\1754c37170a596c2565dcdf21351b275\runtime-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\1754c37170a596c2565dcdf21351b275\runtime-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\146d983f68704dae9fb924750805fa0a\play-services-measurement-17.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\146d983f68704dae9fb924750805fa0a\play-services-measurement-17.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\bde5eb0318f54afaebfddfd7744e500c\play-services-measurement-api-17.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\bde5eb0318f54afaebfddfd7744e500c\play-services-measurement-api-17.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\bfe393baab2fa01b1bcbb62d1de424a3\play-services-measurement-sdk-17.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\bfe393baab2fa01b1bcbb62d1de424a3\play-services-measurement-sdk-17.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\c974b43e57f2ece2b339e0a98aaa403c\firebase-auth-interop-18.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\c974b43e57f2ece2b339e0a98aaa403c\firebase-auth-interop-18.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\856a947c1a9c6ebc4d2fc0c2fb4dbece\firebase-iid-19.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\856a947c1a9c6ebc4d2fc0c2fb4dbece\firebase-iid-19.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\e7f18d9a4dd15f2f39538b6f6728a054\firebase-iid-interop-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\e7f18d9a4dd15f2f39538b6f6728a054\firebase-iid-interop-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\951b5e7f354daaaf8db57d3e12181016\play-services-base-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\951b5e7f354daaaf8db57d3e12181016\play-services-base-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:19.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\b1384c5fdf3acad4baebcde528b744a2\firebase-common-19.0.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:19.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\b1384c5fdf3acad4baebcde528b744a2\firebase-common-19.0.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\75185506230655574b8334cb643643f0\play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\75185506230655574b8334cb643643f0\play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\895850673c0f324b83bbc28dd883a50b\play-services-measurement-impl-17.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\895850673c0f324b83bbc28dd883a50b\play-services-measurement-impl-17.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\70dcb0b542e9a9cd0075815f79dd0e4c\play-services-measurement-sdk-api-17.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\70dcb0b542e9a9cd0075815f79dd0e4c\play-services-measurement-sdk-api-17.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\8a33a6bcb39787128557280c6f457c70\play-services-measurement-base-17.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\8a33a6bcb39787128557280c6f457c70\play-services-measurement-base-17.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\338fab4b05d87887cad32009aa98de25\play-services-stats-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\338fab4b05d87887cad32009aa98de25\play-services-stats-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\698268a0a81e9f05504f9f90dbf99e08\firebase-measurement-connector-18.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\698268a0a81e9f05504f9f90dbf99e08\firebase-measurement-connector-18.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\f4d430d7612f12d82e3c4400aed4b652\play-services-ads-identifier-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\f4d430d7612f12d82e3c4400aed4b652\play-services-ads-identifier-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\0ada2b31d7171ba2bff9cdd038b36ee2\play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\0ada2b31d7171ba2bff9cdd038b36ee2\play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\1cbd3b0b2910c69c982ed3cdc1333c00\fragment-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\1cbd3b0b2910c69c982ed3cdc1333c00\fragment-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\33904a9952e04540992fd4e899a6e29f\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\33904a9952e04540992fd4e899a6e29f\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\45739e064fd8ad2faa9c3686c49a0516\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\45739e064fd8ad2faa9c3686c49a0516\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\704f77bb835d112513bfb707984cbdc1\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\704f77bb835d112513bfb707984cbdc1\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\ac681daf82c56bbcb32cd485fc064a28\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\ac681daf82c56bbcb32cd485fc064a28\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\793a97fec7a6dab603ab3ae8209f13cc\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\793a97fec7a6dab603ab3ae8209f13cc\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\599a956fc5880721b736c36d7a2a90a9\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\599a956fc5880721b736c36d7a2a90a9\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\ab3a184af13a3a82dd474493bbfa3bb1\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\ab3a184af13a3a82dd474493bbfa3bb1\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\a6c2f02f5bfac95e56aa3f49c83ac397\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\a6c2f02f5bfac95e56aa3f49c83ac397\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\190ec68b3797b99e27d4d5621c313ff7\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\190ec68b3797b99e27d4d5621c313ff7\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\cea9d07eed335b7021facd428f08a0ed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\cea9d07eed335b7021facd428f08a0ed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\1bd162d1e9982c51999cbe410f0d807a\core-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\1bd162d1e9982c51999cbe410f0d807a\core-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\0150aea6f0427790b968ac16d0f01a76\versionedparcelable-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\0150aea6f0427790b968ac16d0f01a76\versionedparcelable-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\a258954b59e52ea64468e7c8b611841e\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\a258954b59e52ea64468e7c8b611841e\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\ac265cfd5669b686a3cba2f45a6e36b7\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\ac265cfd5669b686a3cba2f45a6e36b7\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\7fcbef39c4d63cdee011faaa088ab3cd\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\7fcbef39c4d63cdee011faaa088ab3cd\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\31820fea8d5074e894dcda880d2751ad\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\31820fea8d5074e894dcda880d2751ad\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\ea6b3260a9a4d94d7ea9aaa5a327bd73\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\ea6b3260a9a4d94d7ea9aaa5a327bd73\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\67688366c6a6c762e55784305fcbc09b\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\67688366c6a6c762e55784305fcbc09b\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\f5e5093a6d2ffb564f346d2769a020dc\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\f5e5093a6d2ffb564f346d2769a020dc\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\c92e9c6549150a4bd8eb347f54ac769d\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\c92e9c6549150a4bd8eb347f54ac769d\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\e542a78b280a084fd48769af2f842423\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\e542a78b280a084fd48769af2f842423\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\25fdd493a672d7b5d446aa2af8c06677\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\25fdd493a672d7b5d446aa2af8c06677\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-database-collection:17.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\6df0cf79b64fd2c26bf8b27a76ce287b\firebase-database-collection-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-database-collection:17.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\6df0cf79b64fd2c26bf8b27a76ce287b\firebase-database-collection-17.0.0\AndroidManifest.xml:5:5-44
 INJECTED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
@@ -143,3 +294,55 @@ INJECTED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2
 		INJECTED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml
 		ADDED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\elyse\OneDrive\Documents\IT4784_Adv_Mobile_App_Dev\Unit_2\SnakeGame1-master\SnakeGame1-master\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.firebase:firebase-database:19.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\0027c910a64e8deac4a49ba74b5b709c\firebase-database-19.0.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.gms:play-services-measurement:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\146d983f68704dae9fb924750805fa0a\play-services-measurement-17.0.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\146d983f68704dae9fb924750805fa0a\play-services-measurement-17.0.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\bde5eb0318f54afaebfddfd7744e500c\play-services-measurement-api-17.0.1\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\bde5eb0318f54afaebfddfd7744e500c\play-services-measurement-api-17.0.1\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\856a947c1a9c6ebc4d2fc0c2fb4dbece\firebase-iid-19.0.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\856a947c1a9c6ebc4d2fc0c2fb4dbece\firebase-iid-19.0.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\895850673c0f324b83bbc28dd883a50b\play-services-measurement-impl-17.0.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\895850673c0f324b83bbc28dd883a50b\play-services-measurement-impl-17.0.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\70dcb0b542e9a9cd0075815f79dd0e4c\play-services-measurement-sdk-api-17.0.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\70dcb0b542e9a9cd0075815f79dd0e4c\play-services-measurement-sdk-api-17.0.1\AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-database:19.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\0027c910a64e8deac4a49ba74b5b709c\firebase-database-19.0.0\AndroidManifest.xml:25:22-76
+uses-permission#android.permission.INTERNET
+ADDED from [com.google.firebase:firebase-database:19.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\0027c910a64e8deac4a49ba74b5b709c\firebase-database-19.0.0\AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.gms:play-services-measurement:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\146d983f68704dae9fb924750805fa0a\play-services-measurement-17.0.1\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\146d983f68704dae9fb924750805fa0a\play-services-measurement-17.0.1\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\bde5eb0318f54afaebfddfd7744e500c\play-services-measurement-api-17.0.1\AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\bde5eb0318f54afaebfddfd7744e500c\play-services-measurement-api-17.0.1\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\856a947c1a9c6ebc4d2fc0c2fb4dbece\firebase-iid-19.0.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\856a947c1a9c6ebc4d2fc0c2fb4dbece\firebase-iid-19.0.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\895850673c0f324b83bbc28dd883a50b\play-services-measurement-impl-17.0.1\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\895850673c0f324b83bbc28dd883a50b\play-services-measurement-impl-17.0.1\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\70dcb0b542e9a9cd0075815f79dd0e4c\play-services-measurement-sdk-api-17.0.1\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\70dcb0b542e9a9cd0075815f79dd0e4c\play-services-measurement-sdk-api-17.0.1\AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from [com.google.firebase:firebase-database:19.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\0027c910a64e8deac4a49ba74b5b709c\firebase-database-19.0.0\AndroidManifest.xml:26:22-64
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.android.gms:play-services-measurement:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\146d983f68704dae9fb924750805fa0a\play-services-measurement-17.0.1\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\bde5eb0318f54afaebfddfd7744e500c\play-services-measurement-api-17.0.1\AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\bde5eb0318f54afaebfddfd7744e500c\play-services-measurement-api-17.0.1\AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\856a947c1a9c6ebc4d2fc0c2fb4dbece\firebase-iid-19.0.0\AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\856a947c1a9c6ebc4d2fc0c2fb4dbece\firebase-iid-19.0.0\AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\895850673c0f324b83bbc28dd883a50b\play-services-measurement-impl-17.0.1\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\895850673c0f324b83bbc28dd883a50b\play-services-measurement-impl-17.0.1\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\70dcb0b542e9a9cd0075815f79dd0e4c\play-services-measurement-sdk-api-17.0.1\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\70dcb0b542e9a9cd0075815f79dd0e4c\play-services-measurement-sdk-api-17.0.1\AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\146d983f68704dae9fb924750805fa0a\play-services-measurement-17.0.1\AndroidManifest.xml:25:22-65
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.android.gms:play-services-measurement:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\146d983f68704dae9fb924750805fa0a\play-services-measurement-17.0.1\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\895850673c0f324b83bbc28dd883a50b\play-services-measurement-impl-17.0.1\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\895850673c0f324b83bbc28dd883a50b\play-services-measurement-impl-17.0.1\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\70dcb0b542e9a9cd0075815f79dd0e4c\play-services-measurement-sdk-api-17.0.1\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\70dcb0b542e9a9cd0075815f79dd0e4c\play-services-measurement-sdk-api-17.0.1\AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.0.1] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\146d983f68704dae9fb924750805fa0a\play-services-measurement-17.0.1\AndroidManifest.xml:26:22-107
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\856a947c1a9c6ebc4d2fc0c2fb4dbece\firebase-iid-19.0.0\AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\elyse\.gradle\caches\transforms-2\files-2.1\856a947c1a9c6ebc4d2fc0c2fb4dbece\firebase-iid-19.0.0\AndroidManifest.xml:26:22-79
