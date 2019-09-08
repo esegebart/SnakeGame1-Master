@@ -132,6 +132,8 @@ public class SnakeView extends TileView {
      */
     private View mBackgroundView;
 
+    private View mUserScoreView;
+
     /**
      * mSnakeTrail: A list of Coordinates that make up the snake's body mAppleList: The secret
      * location of the juicy apples the snake craves.
@@ -373,13 +375,14 @@ public class SnakeView extends TileView {
     /**
      * Sets the Dependent views that will be used to give information (such as "Game Over" to the
      * user and also to handle touch events for making movements
-     * 
-     * @param newView
+     *
      */
-    public void setDependentViews(TextView msgView, View arrowView, View backgroundView) {
+    public void setDependentViews(TextView msgView, View arrowView, View backgroundView,
+                                  TextView highScoreButtonView) {
         mStatusText = msgView;
         mArrowsView = arrowView;
         mBackgroundView = backgroundView;
+        mUserScoreView = highScoreButtonView;
     }
 
     /**
@@ -391,6 +394,8 @@ public class SnakeView extends TileView {
     public void setMode(int newMode) {
         int oldMode = mMode;
         mMode = newMode;
+
+        mUserScoreView.setVisibility(View.VISIBLE);
 
         if (newMode == RUNNING && oldMode != RUNNING) {
             // hide the game instructions
