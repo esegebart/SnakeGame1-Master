@@ -12,9 +12,9 @@ public class UserScore implements Serializable {
         this.score = score;
     }
 
-    String username;
-    Long date;
-    int score;
+    public String username;
+    public Long date;
+    public int score;
 
 
 }
