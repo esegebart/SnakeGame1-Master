@@ -34,6 +34,7 @@ import android.view.View;
 import android.view.View.OnTouchListener;
 import android.widget.TextView;
 
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -83,10 +84,7 @@ public class Snake extends AppCompatActivity {
 
     // Declare DatabaseReference
     private DatabaseReference mDatabase;
-
-    private FirebaseDatabase database = FirebaseDatabase.getInstance();
-    private DatabaseReference myRef = database.getReference("message");
-    private DataSnapshot dataSnapshot;
+    private Boolean connected = true;
 
 
     /**
@@ -98,6 +96,8 @@ public class Snake extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.snake_layout);
+
+        FirebaseApp.initializeApp(this);
 
         /**Load the sound into the eatSound variable*/
         eatSound = MediaPlayer.create(this, R.raw.eating);
@@ -349,31 +349,6 @@ public class Snake extends AppCompatActivity {
             alert.show();
         }
     }
-
-    public void basicReadWrite() {
-        // Write a message to the database
-
-        myRef.setValue("Hello, World!");
-    }
-
-    // Read from the database
-//        myRef.addValueEventListener(new ValueEventListener() {
-//
-//        @Override
-//        public void onDataChange(DataSnapshot dataSnapshot) {
-//            // This method is called once with the initial value and again
-//            // whenever data at this location is updated.
-//            String value = dataSnapshot.getValue(String.class);
-//            Log.d(TAG, "Value is: " + value);
-//        }
-//
-//        @Override
-//        public void onCancelled(DatabaseError error) {
-//            // Failed to read value
-//            Log.w(TAG, "Failed to read value.", error.toException());
-//        }
-//    });
-
 
 
 
