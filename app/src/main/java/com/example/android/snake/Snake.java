@@ -18,19 +18,31 @@ package com.example.android.snake;
 
 import android.app.AlertDialog;
 import android.content.ContentValues;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.media.MediaPlayer;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
 import android.widget.TextView;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.text.DateFormat;
 import java.util.ArrayList;
@@ -58,6 +70,7 @@ public class Snake extends AppCompatActivity {
     public static int MOVE_RIGHT = 3;
 
     private final String USERNAME_PLACEHOLDER = "username";
+    private final String FIREBASE_CHILD_NAME = "userScores";
 
     private static String ICICLE_KEY = "snake-view";
 
@@ -68,6 +81,10 @@ public class Snake extends AppCompatActivity {
     private MediaPlayer eatSound;
 
     private UserScoreOpenHelper dbHelper;
+
+    // Declare DatabaseReference
+    private DatabaseReference mDatabase;
+
 
     private List<UserScore> userScores;
 
@@ -81,15 +98,15 @@ public class Snake extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.snake_layout);
 
-        /**Load the sound into the eatSound variable*/
+        // Load the sound into the eatSound variable
         eatSound = MediaPlayer.create(this, R.raw.eating);
 
-        mSnakeView = (SnakeView) findViewById(R.id.snake);
+        mSnakeView = findViewById(R.id.snake);
         mSnakeView.setDependentViews((TextView) findViewById(R.id.text),
                 findViewById(R.id.arrowContainer), findViewById(R.id.background),
                 (TextView) findViewById(R.id.userScores));
 
-        mUserScoreButton = (TextView) findViewById(R.id.userScores);
+        mUserScoreButton = findViewById(R.id.userScores);
 
         if (savedInstanceState == null) {
             // We were just launched -- set up a new game
@@ -129,8 +146,8 @@ public class Snake extends AppCompatActivity {
             }
         });
 
-        /** Create method to play the sound when the SnakeMovementListener is called in SnakeView
-         * and onEventOccurred is called*/
+        // Create method to play the sound when the SnakeMovementListener is called in SnakeView
+        // and onEventOccurred is called
         mSnakeView.setSnakeMovementListener(new SnakeView.SnakeMovementListener() {
             @Override
             public void onEventOccurred() {
@@ -139,22 +156,23 @@ public class Snake extends AppCompatActivity {
             }
         });
 
-        dbHelper = new UserScoreOpenHelper(this);
-        userScores = readScoresFromDB(1);
+        // Initialize DatabaseReference
+        setUpDatabases();
+        userScores = readData(1);
         if (!userScores.isEmpty()) {
             showScore(userScores.get(0));
         }
         mSnakeView.setGameOverListener(new SnakeView.GameOverListener() {
             @Override
-            public void onEventOccurred(long score) {
-                writeScoreToDB(score);
+            public void onEventOccurred(int score) {
+                writeData(score);
             }
         });
 
         mUserScoreButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                userScores = readScoresFromDB(5);
+                userScores = readData(5);
                 UserScoresDialogFragment dialog = new UserScoresDialogFragment()
                         .newInstance((ArrayList<UserScore>) userScores);
                 FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
@@ -212,6 +230,26 @@ public class Snake extends AppCompatActivity {
         return super.onKeyDown(keyCode, msg);
     }
 
+    private void setUpDatabases() {
+        mDatabase = FirebaseDatabase.getInstance().getReference();
+        dbHelper = new UserScoreOpenHelper(this);
+    }
+
+    private void writeData(int score) {
+        writeScoreToDB(score);
+        if (isConnected()) {
+            writeToFireBase(score);
+        }
+    }
+
+    private void writeToFireBase(int score) {
+        String key = mDatabase.child(FIREBASE_CHILD_NAME).push().getKey();
+        if (key != null) {
+            mDatabase.child(FIREBASE_CHILD_NAME).child(key).setValue(buildUserScore(score));
+        }
+
+    }
+
     private void writeScoreToDB(long score) {
         // Gets the data repository in write mode
         SQLiteDatabase db = dbHelper.getWritableDatabase();
@@ -223,8 +261,41 @@ public class Snake extends AppCompatActivity {
         values.put(UserScoreReaderContract.UserScoreFeedEntry.SCORE, score);
 
         // Insert the new row, returning the primary key value of the new row
-        long newRowId = db.insert(UserScoreReaderContract.UserScoreFeedEntry.DICTIONARY_TABLE_NAME,
+        db.insert(UserScoreReaderContract.UserScoreFeedEntry.DICTIONARY_TABLE_NAME,
                 null, values);
+    }
+
+    private UserScore buildUserScore(int score) {
+        return new UserScore(USERNAME_PLACEHOLDER,
+                System.currentTimeMillis(),
+                score);
+    }
+
+    private List<UserScore> readData(int limit) {
+        if (isConnected()) {
+            return readScoresFromFirebase();
+        } else {
+            return readScoresFromDB(limit);
+        }
+    }
+
+    private List<UserScore> readScoresFromFirebase() {
+        final List<UserScore> scoresFromFB = new ArrayList<>();
+        mDatabase.child(FIREBASE_CHILD_NAME).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for (DataSnapshot noteSnapshot: dataSnapshot.getChildren()){
+                    UserScore score = noteSnapshot.getValue(UserScore.class);
+                    scoresFromFB.add(score);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                Log.d("Firebase", databaseError.toString());
+            }
+        });
+        return scoresFromFB;
     }
 
     private List<UserScore> readScoresFromDB(int limitQuery) {
@@ -253,14 +324,14 @@ public class Snake extends AppCompatActivity {
                 Integer.toString(limitQuery)
         );
 
-        List<UserScore> scores = new ArrayList<UserScore>();
+        List<UserScore> scores = new ArrayList<>();
         while(cursor.moveToNext()) {
             String username = cursor.getString(
-                    cursor.getColumnIndexOrThrow(UserScoreReaderContract.UserScoreFeedEntry.USERNAME));;
+                    cursor.getColumnIndexOrThrow(UserScoreReaderContract.UserScoreFeedEntry.USERNAME));
             long date = cursor.getLong(
                     cursor.getColumnIndexOrThrow(UserScoreReaderContract.UserScoreFeedEntry.SCORE_DATE));
             int score = cursor.getInt(
-                    cursor.getColumnIndexOrThrow(UserScoreReaderContract.UserScoreFeedEntry.SCORE));;
+                    cursor.getColumnIndexOrThrow(UserScoreReaderContract.UserScoreFeedEntry.SCORE));
             scores.add(new UserScore(username, date, score));
         }
         cursor.close();
@@ -272,7 +343,7 @@ public class Snake extends AppCompatActivity {
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setMessage("Your last score was " + userScore.score +
                     " on " + DateFormat.getInstance().format(userScore.date)
-            + "!")
+                    + "!")
                     .setCancelable(false)
                     .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
@@ -284,6 +355,13 @@ public class Snake extends AppCompatActivity {
         }
     }
 
+    private boolean isConnected() {
+        ConnectivityManager connMgr = (ConnectivityManager)
+                getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
+        return (networkInfo != null && networkInfo.isConnected());
+        //return true;
+    }
 
 
 
