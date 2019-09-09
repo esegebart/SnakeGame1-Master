@@ -68,7 +68,7 @@ public class SnakeView extends TileView {
     }
 
     public interface GameOverListener {
-        void onEventOccurred(long score);
+        void onEventOccurred(int score);
     }
 
     /**
@@ -701,7 +701,7 @@ public class SnakeView extends TileView {
 
     public void triggerGameOverEvent() {
         if (gameOverListener != null) {
-            gameOverListener.onEventOccurred(mScore);
+            gameOverListener.onEventOccurred(new Long(mScore).intValue());
         }
     }
 

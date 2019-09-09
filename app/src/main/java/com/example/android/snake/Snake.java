@@ -25,6 +25,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.KeyEvent;
@@ -37,6 +38,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.text.DateFormat;
 import java.util.ArrayList;
@@ -80,7 +82,7 @@ public class Snake extends AppCompatActivity {
     private List<UserScore> userScores;
 
     // Declare DatabaseReference
-//    private DatabaseReference mDatabase;
+    private DatabaseReference mDatabase;
 
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
     private DatabaseReference myRef = database.getReference("message");
@@ -155,15 +157,18 @@ public class Snake extends AppCompatActivity {
             }
         });
 
+        // Initialize DatabaseReference
+        mDatabase = FirebaseDatabase.getInstance().getReference();
+
         dbHelper = new UserScoreOpenHelper(this);
-        userScores = readScoresFromDB(1);
+        userScores = readData(1);
         if (!userScores.isEmpty()) {
             showScore(userScores.get(0));
         }
         mSnakeView.setGameOverListener(new SnakeView.GameOverListener() {
             @Override
-            public void onEventOccurred(long score) {
-                writeScoreToDB(score);
+            public void onEventOccurred(int score) {
+                writeData(score);
             }
         });
 
@@ -178,9 +183,6 @@ public class Snake extends AppCompatActivity {
                 dialog.show(ft, tag);
             }
         });
-
-        // Initialize DatabaseReference
-//        mDatabase = FirebaseDatabase.getInstance().getReference();
 
     }
 
@@ -230,6 +232,25 @@ public class Snake extends AppCompatActivity {
         return super.onKeyDown(keyCode, msg);
     }
 
+    private void writeData(int score) {
+        writeScoreToDB(score);
+        if (connected) {
+            writeToFireBase(score);
+        }
+    }
+
+    private void writeToFireBase(int score) {
+        String key = mDatabase.child("scores").push().getKey();
+        mDatabase.child("scores").child(key).setValue(buildUserScore(score));
+
+    }
+
+    private UserScore buildUserScore(int score) {
+        return new UserScore(USERNAME_PLACEHOLDER,
+                System.currentTimeMillis(),
+                score);
+    }
+
     private void writeScoreToDB(long score) {
         // Gets the data repository in write mode
         SQLiteDatabase db = dbHelper.getWritableDatabase();
@@ -243,6 +264,33 @@ public class Snake extends AppCompatActivity {
         // Insert the new row, returning the primary key value of the new row
         long newRowId = db.insert(UserScoreReaderContract.UserScoreFeedEntry.DICTIONARY_TABLE_NAME,
                 null, values);
+    }
+
+    private List<UserScore> readData(int limit) {
+        if (connected) {
+           return readScoresFromFirebase();
+        } else {
+            return readScoresFromDB(limit);
+        }
+    }
+
+    private List<UserScore> readScoresFromFirebase() {
+        final List<UserScore> scoresFromFB = new ArrayList<>();
+        mDatabase.child("scores").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for (DataSnapshot noteSnapshot: dataSnapshot.getChildren()){
+                    UserScore score = noteSnapshot.getValue(UserScore.class);
+                    scoresFromFB.add(score);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+        return scoresFromFB;
     }
 
     private List<UserScore> readScoresFromDB(int limitQuery) {
